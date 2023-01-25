@@ -1,0 +1,238 @@
+/*
+Theme Name: InformaTICs
+Author: Carlos Ramirez
+Author URI: https://wordpress.org/
+Description: Nuestra plantilla creada en 2022 trata de ir avanzando desde una plantilla desde cero
+Tags: DAW
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: InformaTICs
+*/
+
+
+/* General */
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    color: #000000;
+    overflow-x: hidden;
+}
+
+a {
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/* Header, menus */
+
+header {
+    background-color: none;
+    padding-top: 25px;
+}
+
+.barra-principal {
+    background-color: none;
+    margin-top: 3px;
+}
+
+.barra-principal a {
+    color: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.barra-principal a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-list {
+    padding: 12px 0;
+    margin-bottom: 0;
+}
+
+.menu-list>li:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+/* Submenus */
+
+.menu-item-has-children {
+    position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    padding: 0;
+    min-width: 120px;
+    text-align: left;
+    background-color: #212529;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+    margin-left: 10px;
+}
+
+.menu-item-has-children .sub-menu li {
+    padding: 5px 10px;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.menu-item-has-children:hover>a::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: #007bff transparent transparent transparent;
+    position: relative;
+    top: 17px;
+    margin-left: 5px;
+}
+
+
+/* Content */
+
+
+/* Main */
+
+#main>.container {
+    box-shadow: 0 7px 18px rgba(0, 0, 0, .5);
+}
+
+
+/* Info content */
+
+h3 {
+    font-size: 24px;
+    border-bottom: 1px solid #9e9e9e;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+h3 i {
+    color: #0d6efd;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: none;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+
+/* page.php, todo contenido de texto de la pagina
+le pongo margenes para que se vea espaciado*/
+
+
+/*pagina principal*/
+
+.entry-header {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.entry-content {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 45%;
+}
+
+.entry-content li,
+.entry-content ul {
+    list-style: none;
+}
+
+.entry-content a {
+    color: #0d6efd;
+    text-align: left;
+}
+
+.entry-content a:hover {
+    color: #000;
+}
+
+
+/* Fila */
+
+.col-md-6 {
+    margin-top: 80px;
+}
+
+
+/* Cabecera articulo */
+
+.archive h1 {
+    background-color: 007bff;
+    margin: 0 -15px;
+    padding: 35px;
+    font-weight: normal;
+}
+
+.archive #main a {
+    color: #000000;
+}
+
+.archive #main a:hover,
+.archive #main a:active,
+.archive #main a:focus {
+    color: #0d6efd;
+}
+
+
+/* Bootstrap */
+
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+
+/* WooCoommerce*/
+
+
+/*mi cuenta, aviso no hay descargas, no hay pedidos, etc*/
+
+.woocommerce-MyAccount-content {
+    font-size: 73%;
+    margin-top: 0%;
+}
+
+
+/*Finalizar compra*/
+
+.woocommerce form .form-row {
+    padding: 0px;
+    margin: 1px 1px 10px 1px;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0;
+    outline: 0;
+    line-height: normal;
+}
